@@ -32,6 +32,20 @@
             margin-bottom: 2rem;
         }
 
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            border-radius: 5px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
         footer {
             background: #ff6f61;
             color: white;
@@ -71,7 +85,10 @@
         </section>
         <section id="gallery">
             <h2>Gallery</h2>
-            <p>Stay tuned for more cat photos!</p>
+            <div class="gallery">
+                <img src="images/Cat1.jpeg" alt="Cat 1">
+                <img src="images/Cat2.png" alt="Cat 2">
+            </div>
         </section>
         <section id="breeds">
             <h2>Cat Breeds</h2>
