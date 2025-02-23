@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cat Fact Website</title>
     <style>
@@ -44,6 +45,40 @@
             width: 200px;
             height: 200px;
             object-fit: cover;
+        }
+
+        .collapsible {
+            background: #ff6f61;
+            color: white;
+            cursor: pointer;
+            padding: 1rem;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.5rem;
+        }
+
+        .active, .collapsible:hover {
+            background: #ff4c4c;
+        }
+
+        .content {
+            padding: 0 1rem;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            text-align: left;
+            color: black;
+        }
+
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .content li {
+            padding: 0.5rem 0;
         }
 
         footer {
@@ -92,56 +127,97 @@
         </section>
         <section id="breeds">
             <h2>Cat Breeds</h2>
-            <article>
-                <h3>Maine Coon</h3>
-                <p>The Maine Coon is one of the largest domesticated cat breeds. They are known for their friendly and playful personalities. Maine Coons have distinctive tufted ears and long, bushy tails.</p>
-                <h3>Sphynx</h3>
-                <p>The Sphynx is a breed of cat known for its lack of fur. These cats are friendly, energetic, and love attention. Despite their unusual appearance, Sphynx cats are known to be very affectionate pets.</p>
-                <h3>British Shorthair</h3>
-                <p>The British Shorthair is a sturdy, well-balanced breed with a short, dense coat. These cats are known for their calm and easygoing nature, making them excellent companions.</p>
-                <h3>Persian</h3>
-                <p>The Persian cat is a long-haired breed characterized by its round face and short muzzle. Persians are known for their gentle and calm personalities, making them great lap cats.</p>
-                <h3>Siamese</h3>
-                <p>The Siamese cat is known for its striking blue eyes, short coat, and point coloration. Siamese cats are very vocal and social, often forming strong bonds with their human companions.</p>
-            </article>
-        </section>
-        <section id="care-tips">
-            <h2>Cat Care Tips</h2>
-            <article>
-                <h3>Nutrition</h3>
-                <p>Provide your cat with a balanced diet that includes all the necessary nutrients. Make sure to feed them high-quality cat food and provide fresh water at all times.</p>
-                <h3>Grooming</h3>
-                <p>Regular grooming helps keep your cat's coat healthy and reduces shedding. Brush your cat's fur regularly and trim their nails as needed.</p>
-                <h3>Health</h3>
-                <p>Schedule regular veterinary check-ups to ensure your cat stays healthy. Keep an eye out for any signs of illness and address them promptly.</p>
-                <h3>Exercise</h3>
-                <p>Engage your cat in regular play to keep them active and stimulated. Use toys and interactive games to encourage physical and mental exercise.</p>
-                <h3>Litter Box</h3>
-                <p>Keep your cat's litter box clean by scooping it daily and changing the litter regularly. Place the litter box in a quiet, accessible location.</p>
-                <h3>Enrichment</h3>
-                <p>Provide your cat with various forms of enrichment, such as scratching posts, puzzle feeders, and climbing trees, to keep them entertained and satisfied.</p>
-            </article>
-        </section>
-        <section id="fun-facts">
-            <h2>Fun Facts About Cats</h2>
-            <article>
-                <h3>Whisker Wonders</h3>
-                <p>Did you know that a cat's whiskers are roughly as wide as its body? This helps them navigate through tight spaces.</p>
-                <h3>Communication</h3>
-                <p>Cats use a variety of vocalizations to communicate with their humans. From purrs to meows to chirps, each sound conveys a different message.</p>
-                <h3>Toe Beans</h3>
-                <p>The soft pads on a cat's paws are often referred to as "toe beans" due to their bean-like appearance. These pads help cats walk quietly and provide cushioning.</p>
-                <h3>Ancient Pets</h3>
-                <p>Cats were domesticated around 9,000 years ago in the Near East. They were worshipped in ancient Egypt and often depicted in artwork and statues.</p>
-                <h3>Purring Power</h3>
-                <p>Cats purr not only when they're content but also to self-soothe. Purring can have a calming effect on cats and helps in their healing process.</p>
-                <h3>Unique Noseprints</h3>
-                <p>Just like human fingerprints, each cat's noseprint is unique and can be used to identify them.</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; The Octicat Community</p>
-    </footer>
-</body>
-</html>
+            <button type="button" class="collapsible">Click to see all cat breeds</button>
+            <div class="content">
+                <ul>
+                    <li>
+                        <h3>Abyssinian</h3>
+                        <p>The Abyssinian is known for its playful and active nature. These cats are incredibly curious and love to explore their surroundings.</p>
+                    </li>
+                    <li>
+                        <h3>American Bobtail</h3>
+                        <p>The American Bobtail has a distinctive short tail and a wild appearance. They are friendly, intelligent, and enjoy interactive play.</p>
+                    </li>
+                    <li>
+                        <h3>American Curl</h3>
+                        <p>The American Curl is easily recognizable by its unique backward-curling ears. They are affectionate, people-oriented, and adapt well to new environments.</p>
+                    </li>
+                    <li>
+                        <h3>American Shorthair</h3>
+                        <p>The American Shorthair is a classic, all-American breed known for its robust health, longevity, and friendly personality.</p>
+                    </li>
+                    <li>
+                        <h3>American Wirehair</h3>
+                        <p>The American Wirehair has a distinctive wiry coat. These cats are known for their playful and affectionate nature.</p>
+                    </li>
+                    <li>
+                        <h3>Balinese</h3>
+                        <p>The Balinese is a long-haired breed that is a natural mutation of the Siamese. They are vocal, social, and love to interact with their human companions.</p>
+                    </li>
+                    <li>
+                        <h3>Bengal</h3>
+                        <p>The Bengal has a striking appearance with a leopard-like coat. They are energetic, playful, and highly intelligent.</p>
+                    </li>
+                    <li>
+                        <h3>Birman</h3>
+                        <p>The Birman is known for its beautiful, silky coat and striking blue eyes. They are gentle, affectionate, and enjoy human company.</p>
+                    </li>
+                    <li>
+                        <h3>Bombay</h3>
+                        <p>The Bombay is often called the "mini-panther" due to its sleek, black coat. They are affectionate, playful, and love to be the center of attention.</p>
+                    </li>
+                    <li>
+                        <h3>British Shorthair</h3>
+                        <p>The British Shorthair is a sturdy, well-balanced breed with a short, dense coat. These cats are known for their calm and easygoing nature.</p>
+                    </li>
+                    <li>
+                        <h3>Burmese</h3>
+                        <p>The Burmese is known for its muscular build and playful personality. They are affectionate and form strong bonds with their human families.</p>
+                    </li>
+                    <li>
+                        <h3>Burmilla</h3>
+                        <p>The Burmilla is a beautiful breed with a shimmering coat. They are playful, affectionate, and enjoy spending time with their owners.</p>
+                    </li>
+                    <li>
+                        <h3>Chartreux</h3>
+                        <p>The Chartreux is known for its blue-gray coat and golden eyes. They are quiet, gentle, and make excellent companions.</p>
+                    </li>
+                    <li>
+                        <h3>Colorpoint Shorthair</h3>
+                        <p>The Colorpoint Shorthair is a close relative of the Siamese. They are vocal, affectionate, and enjoy human interaction.</p>
+                    </li>
+                    <li>
+                        <h3>Cornish Rex</h3>
+                        <p>The Cornish Rex has a distinctive curly coat and an elegant appearance. They are playful, energetic, and love to be the center of attention.</p>
+                    </li>
+                    <li>
+                        <h3>Devon Rex</h3>
+                        <p>The Devon Rex is known for its large ears and wavy coat. They are affectionate, mischievous, and enjoy being around people.</p>
+                    </li>
+                    <li>
+                        <h3>Egyptian Mau</h3>
+                        <p>The Egyptian Mau is one of the few naturally spotted breeds. They are active, playful, and have a loyal personality.</p>
+                    </li>
+                    <li>
+                        <h3>European Burmese</h3>
+                        <p>The European Burmese is a lively and affectionate breed. They are known for their friendly nature and enjoy being part of a family.</p>
+                    </li>
+                    <li>
+                        <h3>Exotic Shorthair</h3>
+                        <p>The Exotic Shorthair is a short-haired version of the Persian. They are gentle, affectionate, and easygoing.</p>
+                    </li>
+                    <li>
+                        <h3>Havana Brown</h3>
+                        <p>The Havana Brown is known for its rich, chocolate-colored coat. They are intelligent, playful, and form strong bonds with their owners.</p>
+                    </li>
+                    <li>
+                        <h3>Himalayan</h3>
+                        <p>The Himalayan is a cross between the Persian and the Siamese. They have a luxurious coat and a calm, gentle personality.</p>
+                    </li>
+                    <li>
+                        <h3>Japanese Bobtail</h3>
+                        <p>The Japanese Bobtail is known for its distinctive short, bunny-like tail. They are friendly, active, and bring good luck in Japanese culture.</p>
+                    </li>
+                    <li>
+                        <h3>Khao Manee</h3>
+                        <[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/Mahmudul121/Final-Term/tree/224c81c3583609798f46911e7cb24cafd3467379/resources%2Fviews%2Fhome%2Findex.blade.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/Novi1996/git-test/tree/a333860c92fe3c4a93d00b5780dee581018713c1/index.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")
