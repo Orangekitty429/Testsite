@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Wonderland</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background: #ff6f61;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 1rem;
+            padding: 0.5rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #ff6f61;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #ff6f61;
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cat Wonderland</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Cats</h2>
+            <p>Cats are adorable, curious, and sometimes mysterious creatures. Let’s explore their world!</p>
+            <img src="https://via.placeholder.com/600x400" alt="Cute cat">
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/200x200" alt="Cat 1">
+                <img src="https://via.placeholder.com/200x200" alt="Cat 2">
+                <img src="https://via.placeholder.com/200x200" alt="Cat 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cat Wonderland</p>
+    </footer>
+</body>
+</html>
